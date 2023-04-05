@@ -35,6 +35,10 @@ public class Main {
                 } else {
                     System.out.println(n + " is not prime");
                 }
+            case 4:
+                System.out.println("Enter a number");
+                n = scanner.nextInt();
+                System.out.println(Problem4.factorial(n));
         }
     }
 }
