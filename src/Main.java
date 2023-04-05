@@ -39,6 +39,10 @@ public class Main {
                 System.out.println("Enter a number");
                 n = scanner.nextInt();
                 System.out.println(Problem4.factorial(n));
+            case 5:
+                System.out.println("Enter a number");
+                n = scanner.nextInt();
+                System.out.println(Problem5.fibonacci(n));
         }
     }
 }
