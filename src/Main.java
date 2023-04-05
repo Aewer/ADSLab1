@@ -16,7 +16,7 @@ public class Main {
                 for (int i = 0; i < n; i++) {
                     arr[i] = scanner.nextInt();
                 }
-                System.out.println(findMin(arr, n));
+                System.out.println("The minimum number is " + Problem1.findMin(arr, n));
             case 2:
                 System.out.println("Length of array: ");
                 n = scanner.nextInt();
@@ -25,24 +25,16 @@ public class Main {
                 for (int i = 0; i < n; i++) {
                     arr[i] = scanner.nextInt();
                 }
-                System.out.println(findAverage(arr, n));
-        }
-    }
-    public static int findMin(int[] arr, int n) {
-        if (n == 1) {
-            return arr[0];
-        } else {
-            int min = findMin(arr, n-1);
-            return Math.min(min, arr[n-1]);
-        }
-    }
-    public static double findAverage(int[] arr, int n) {
-        if (n == 0) {
-            return 0;
-        } else {
-            double sum = findAverage(arr, n - 1) * (n - 1);
-            sum += arr[n - 1];
-            return sum / n;
+                System.out.println("The average is " + Problem2.findAverage(arr, n));
+            case 3:
+                System.out.println("Enter a number");
+                n = scanner.nextInt();
+                boolean bool = Problem3.checkIfPrime(n, 2);
+                if (bool) {
+                    System.out.println(n + " is prime");
+                } else {
+                    System.out.println(n + " is not prime");
+                }
         }
     }
 }
