@@ -38,11 +38,17 @@ public class Main {
             case 4:
                 System.out.println("Enter a number");
                 n = scanner.nextInt();
-                System.out.println(Problem4.factorial(n));
+                System.out.println("The factorial is " + Problem4.factorial(n));
             case 5:
                 System.out.println("Enter a number");
                 n = scanner.nextInt();
-                System.out.println(Problem5.fibonacci(n));
+                System.out.println("The " + n + " element is fibonacci sequence is " + Problem5.fibonacci(n));
+            case 6:
+                System.out.println("Enter a number");
+                int a = scanner.nextInt();
+                System.out.println("Enter the power of the number");
+                n = scanner.nextInt();
+                System.out.println(Problem6.power(a, n));
         }
     }
 }
