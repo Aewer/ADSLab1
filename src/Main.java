@@ -41,12 +41,12 @@ public class Main {
             case 4:
                 System.out.println("Enter a number");
                 n = scanner.nextInt();
-                System.out.println("The factorial is " + Problem4.factorial(n));
+                System.out.println("The factorial is " + Problem4.findFactorial(n));
                 break;
             case 5:
                 System.out.println("Enter a number");
                 n = scanner.nextInt();
-                System.out.println("The " + n + " element is fibonacci sequence is " + Problem5.fibonacci(n));
+                System.out.println("The " + n + " element is fibonacci sequence is " + Problem5.findFibonacci(n));
                 break;
             case 6:
                 System.out.println("Enter a number");
@@ -67,6 +67,11 @@ public class Main {
                     System.out.println("No");
                 }
                 break;
+            case 9:
+                System.out.println("Enter n and k");
+                n = scanner.nextInt();
+                int k = scanner.nextInt();
+                System.out.println(Problem9.findBinCoeff(n, k));
         }
     }
 }
