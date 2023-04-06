@@ -75,6 +75,11 @@ public class Main {
                 int k = scanner.nextInt();
                 System.out.println(Problem9.findBinCoeff(n, k));
                 break;
+            case 10:
+                System.out.println("Enter two numbers");
+                a = scanner.nextInt();
+                int b = scanner.nextInt();
+                System.out.println(Problem10.findGCD(a, b));
         }
     }
 }
