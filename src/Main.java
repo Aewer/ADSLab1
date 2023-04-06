@@ -3,16 +3,14 @@ import java.util.Scanner;
 public class Main {
     static Scanner scanner = new Scanner(System.in);
     public static void main(String[] args) {
-        int n;
-        int[] arr;
         System.out.println("Enter the number of problem");
         int problem = scanner.nextInt();
         switch (problem) {
             case 1:
                 System.out.println("Length of array: ");
-                n = scanner.nextInt();
+                int n = scanner.nextInt();
                 System.out.println("Enter the array");
-                arr = new int[n];
+                int[] arr = new int[n];
                 for (int i = 0; i < n; i++) {
                     arr[i] = scanner.nextInt();
                 }
@@ -56,6 +54,10 @@ public class Main {
                 System.out.println(Problem6.findPower(a, n));
                 break;
             case 7:
+                System.out.println("Enter the length of the array");
+                n = scanner.nextInt();
+                System.out.println("Enter the array");
+                Problem7.reverseArray(n);
                 break;
             case 8:
                 System.out.println("Enter a string");
@@ -72,6 +74,7 @@ public class Main {
                 n = scanner.nextInt();
                 int k = scanner.nextInt();
                 System.out.println(Problem9.findBinCoeff(n, k));
+                break;
         }
     }
 }
